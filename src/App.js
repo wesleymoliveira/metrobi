@@ -1,23 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import GlobalStyles from "./styles/global";
+import { CustomThemeProvider } from "./styles/CustomThemeProvider";
+import { Question3 } from "./questions/Question3/Question3";
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <CustomThemeProvider>
+        <head>
+          <title>Wesley - Metrobi</title>
+          <link rel="icon" type="image/x-icon" href="/favicon.ico"></link>
+          <meta name="description" content="Challenge" />
+        </head>
+        <GlobalStyles />
+        <Question3 />
+      </CustomThemeProvider>
     </div>
   );
 }

@@ -1,0 +1,122 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<BaseLayout /> should match snapshot 1`] = `
+.c3 {
+  color: #FAFAFA;
+  font-size: 2.8rem;
+}
+
+.c2 {
+  background-color: #54d5eb;
+  height: 8rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c5 {
+  background-color: #FFA500;
+  height: 8rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c1 {
+  width: 100%;
+  max-width: 80rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  height: 100vh;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  gap: 1.0rem;
+}
+
+.c4 {
+  -webkit-flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 1.0rem;
+}
+
+<div
+  className="c0"
+  data-testid="base-layout"
+>
+  <div
+    className="c1"
+  >
+    <header
+      className="c2"
+      data-testid="header"
+    >
+      <h1
+        className="c3"
+        color="white"
+        data-testid="typography"
+        size="xxlarge"
+      >
+        Header
+      </h1>
+    </header>
+  </div>
+  <main
+    className="c4"
+  />
+  <div
+    className="c1"
+  >
+    <footer
+      className="c5"
+      data-testid="footer"
+    >
+      <h1
+        className="c3"
+        color="white"
+        data-testid="typography"
+        size="xxlarge"
+      >
+        Footer
+      </h1>
+    </footer>
+  </div>
+</div>
+`;

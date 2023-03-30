@@ -1,70 +1,87 @@
-# Getting Started with Create React App
+# METROBI CHALLENGE - Wesley M Oliveira
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Important notes
 
-## Available Scripts
+- Components are developed atomically, allowing for their reuse.
+- All components have at least one rendering test and one snapshot test to ensure that no style is added or altered, respecting their original idea. Take a look at the Typography component.
+- The answers to the questions are in: ```src/questions```. To view question 3, run ```yarn start``` and it will be presented as the home page.
+- Tests were also performed on the functions of the questions.
 
-In the project directory, you can run:
+## Table of Contents
 
-### `npm start`
+- [METROBI CHALLENGE](#metrobi-challenge-wesley-m-oliveira)
+  - [Important Notes](#important-notes)
+  - [Table of Contents](#table-of-contents)
+	- [Main Dependencies](#main-dependencies)
+		- [Styled Components](#styled-components)
+		- [Jest](#jest)
+		- [Plop](#plop)
+		- [Storybook](#storybook)
+  - [Instructions](#instructions)
+    - [How to run the aplication?](#how-to-run-the-aplication)
+    - [Commands - yarn](#commands---yarn)
+    - [Creating new components](#creating-new-components)
+  - [Tests](#tests)
+	  - [Snapshot tests](#snapshot-tests)
+	- [Desired improvements](#desired-improvements)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Main dependencies
 
-### `npm test`
+### Styled-components
+Styled-components is a CSS-in-JS styling framework that uses tagged template literals in JavaScript and the power of CSS to provide a platform that allows you to write actual CSS to style React components.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Styled components are easy-to-make React components that you write with the styled-components library, where you can style your components with plain CSS inside your JavaScript code. ```import styled, { css } from 'styled-components'```
 
-### `npm run build`
+### Jest
+Jest is a JavaScript Testing Framework with a focus on simplicity, with almost zero configuration. ```yarn test```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+It works with projects using: Babel, TypeScript, Node, React, Angular, Vue and more!
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Plop
+Plop is like a "micro-generator framework." It is a small tool that gives you a simple way to generate code or any other type of flat text files in a consistent way. ```yarn generate MyComponent```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Storybook
+Storybook is a frontend workshop for building UI components and pages in isolation. ```yarn storybook```
+Take a look at this real world example: [Grafana UI](https://developers.grafana.com/ui/latest/)
 
-### `npm run eject`
+## Instructions
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### How to run the application?
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- First, download the project repository. Then inside the folder `/metrobi`, execute the command `yarn install` to install all the dependencies.
+- Executing ```yarn start``` the main page have the ```Question 3``` answer.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Commands - yarn
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- [x] start: runs your application on localhost:3000
+- [x] build: creates the production build version
+- [x] test: runs all jest tests
+- [x] storybook: runs storybook on localhost:6006
+- [x] build-storybook: create the build version of storybook
+- [x] generate: create a component structure using 'plop' lib, including test, styles and index ex: ```yarn generate MyComponent```
 
-## Learn More
+### Creating new components
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- Please make sure to use ```yarn generate``` command to create new components
+- Please separate the stylizations in the `*.styled.tsx` file of each component
+- Please create a Storybook of your component with all possible variations
+- Please make at list one test render and snapshot test of your component. We are using Jest and React-testing-library for that.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+You can take a look at this example:
+src/components/Typography
 
-### Code Splitting
+### Tests
+- ```yarn test``` inside the project root folder.
+- If you change any component that has a snapshot test, it will fail. If you really want to update it: after running ```yarn test``` it will show a failed test case related to snapshot, press ```u``` to update it.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Snapshot tests
+- Snapshot tests in Jest are a type of automated testing that compares the current output of a component or function to a previously saved "snapshot" of the expected output. These tests are commonly used for testing UI components to ensure that they are rendering correctly and consistently.
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Desired improvements?
+- I like to use [Husky](https://typicode.github.io/husky/#/) lib. Husky improves our commits.
+	We can use it to lint our commit messages, run tests, lint code, etc... when you commit or push code. 
+- Typescript

@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ExtraContent /> should match snapshot 1`] = `
+.c1 {
+  color: #FAFAFA;
+  font-size: 2.8rem;
+}
+
+.c0 {
+  background-color: #898989;
+  height: 30%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: start;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: start;
+}
+
+<section
+  className="c0"
+  data-testid="extra-content"
+>
+  <h1
+    className="c1"
+    color="white"
+    data-testid="typography"
+    size="xxlarge"
+  >
+    Extra Content
+  </h1>
+</section>
+`;

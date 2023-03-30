@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Hero /> should match snapshot 1`] = `
+.c1 {
+  color: #FAFAFA;
+  font-size: 2.8rem;
+}
+
+.c0 {
+  background-color: #d7c9e3;
+  height: 40%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: start;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: start;
+}
+
+<section
+  className="c0"
+  data-testid="hero"
+>
+  <h1
+    className="c1"
+    color="white"
+    data-testid="typography"
+    size="xxlarge"
+  >
+    Hero
+  </h1>
+</section>
+`;

@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<RelatedPosts /> should match snapshot 1`] = `
+.c1 {
+  color: #FAFAFA;
+  font-size: 2.8rem;
+}
+
+.c0 {
+  background-color: #F1CCDE;
+  width: 20%;
+  height: 12rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: start;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: start;
+  text-align: center;
+  overflow: hidden;
+}
+
+<div
+  className="c0"
+  data-testid="related-posts"
+>
+  <h1
+    className="c1"
+    color="white"
+    data-testid="typography"
+    size="xxlarge"
+  >
+    Related posts
+  </h1>
+</div>
+`;

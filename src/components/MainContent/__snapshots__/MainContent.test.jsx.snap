@@ -1,0 +1,70 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<MainContent /> should match snapshot 1`] = `
+.c2 {
+  color: #FAFAFA;
+  font-size: 2.8rem;
+}
+
+.c3 {
+  color: #FAFAFA;
+  font-size: 1.6rem;
+}
+
+.c0 {
+  background-color: #f5c632;
+  height: 70%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: start;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: start;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  justify-items: center;
+  text-align: center;
+}
+
+<section
+  className="c0"
+  data-testid="main-content"
+>
+  <div
+    className="c1"
+  >
+    <h1
+      className="c2"
+      color="white"
+      data-testid="typography"
+      size="xxlarge"
+    >
+      Main Content
+    </h1>
+    <span
+      className="c3"
+      color="white"
+      data-testid="typography"
+      size="medium"
+    >
+      ** If thing do not look right, make sure your browser 
+      <br />
+       is in "Experimental Mode".
+    </span>
+  </div>
+</section>
+`;

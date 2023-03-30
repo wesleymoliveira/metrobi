@@ -1,0 +1,27 @@
+import React from 'react';
+import { {{pascalCase name}} } from './{{pascalCase name}}';
+
+const {{pascalCase name}}ArgTypes = {
+  label: {
+    name: 'label',
+    type: { name: 'string', required: false },
+    description: 'overwritten description',
+    table: {
+      type: { 
+        summary: 'something short', 
+        detail: 'something really really long' 
+      },
+    },
+    control: {
+      type: 'string'
+    }
+  }
+};
+
+export default {
+	title: 'components/{{pascalCase name}}',
+	component: {{pascalCase name}},
+	argTypes: {{pascalCase name}}ArgTypes
+};
+
+export const Default = (args) => <{{pascalCase name}} {...args} />;

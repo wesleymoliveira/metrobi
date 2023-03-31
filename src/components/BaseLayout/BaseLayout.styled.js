@@ -1,20 +1,21 @@
 import styled, {css} from 'styled-components'
 
 export const Wrapper = styled.div`
-  ${({theme}) => css`
+  ${({ theme }) => css`
     display: flex;
     flex-direction: column;
-    height: 100vh;
     justify-content: space-between;
+    height: 100vh;
     gap: ${theme.spacings.gap};
+    //max-width: ${theme.flex.container};
   `}
 `;
 
 export const Content = styled.main`
   ${({theme}) => css`
-      flex: 1 0 auto;
-      display: flex;
-      flex-direction: column;
-      gap: ${theme.spacings.gap};
+    flex: 8;
+    display: flex;
+    flex-direction: column;
+    gap: ${theme.spacings.gap};
   `}
 `;

@@ -6,8 +6,7 @@ import * as S from "./Question3.styled";
 
 export const Question3 = () => {
 	return (
-		<Container data-testid='question3'>
-			<BaseLayout>
+			<BaseLayout data-testid='question3'>
 				<S.ContentTopRow>
 					<S.LeftColumn>
 						<Hero />
@@ -26,6 +25,5 @@ export const Question3 = () => {
 						<RelatedPosts />
 				</S.ContentBottomRow>
 			</BaseLayout>
-		</Container>
 	);
 };

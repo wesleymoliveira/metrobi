@@ -2,15 +2,16 @@ import styled, { css } from "styled-components";
 
 export const ContentTopRow = styled.div`
   ${({theme}) => css`
+    flex: 5;
     display: flex;
     gap: ${theme.spacings.gap};
-		height: 100%;
 		text-decoration: none;
   `}
 `;
 
 export const ContentBottomRow = styled.div`
   ${({ theme }) => css`
+    flex: 1;
     display: flex;
     gap: ${theme.spacings.gap};
   `}
@@ -19,8 +20,7 @@ export const ContentBottomRow = styled.div`
 export const LeftColumn = styled.div`
   ${({ theme }) => css`
     display: flex;
-    width: 40%;
-		height: 100%;
+    flex: 1;
     flex-direction: column;
 		gap: ${theme.spacings.gap};
   `}
@@ -29,7 +29,7 @@ export const LeftColumn = styled.div`
 export const RightColumn = styled.div`
   ${({ theme }) => css`
     display: flex;
-    width: 60%;
+    flex: 2;
     flex-direction: column;
     gap: ${theme.spacings.gap};
   `}

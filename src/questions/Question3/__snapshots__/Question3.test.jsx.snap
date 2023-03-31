@@ -277,6 +277,7 @@ exports[`<Question3 /> should match snapshot 1`] = `
   >
     <div
       className="c4"
+      data-testid="question3"
     >
       <div
         className="c5"

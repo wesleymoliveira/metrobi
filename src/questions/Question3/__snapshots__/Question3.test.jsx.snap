@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Question3 /> should match snapshot 1`] = `
-.c1 {
+.c0 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -9,18 +9,18 @@ exports[`<Question3 /> should match snapshot 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  height: 100vh;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  height: 100vh;
   gap: 1.0rem;
 }
 
-.c4 {
-  -webkit-flex: 1 0 auto;
-  -ms-flex: 1 0 auto;
-  flex: 1 0 auto;
+.c3 {
+  -webkit-flex: 8;
+  -ms-flex: 8;
+  flex: 8;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -31,19 +31,21 @@ exports[`<Question3 /> should match snapshot 1`] = `
   gap: 1.0rem;
 }
 
-.c3 {
+.c2 {
   color: #FAFAFA;
   font-size: 2.8rem;
 }
 
-.c12 {
+.c11 {
   color: #FAFAFA;
   font-size: 1.6rem;
 }
 
-.c2 {
+.c1 {
   background-color: #54d5eb;
-  height: 8rem;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -58,9 +60,30 @@ exports[`<Question3 /> should match snapshot 1`] = `
   align-items: center;
 }
 
-.c7 {
+.c6 {
   background-color: #d7c9e3;
-  height: 40%;
+  -webkit-flex: 2;
+  -ms-flex: 2;
+  flex: 2;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: start;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: start;
+}
+
+.c9 {
+  background-color: #f5c632;
+  -webkit-flex: 5;
+  -ms-flex: 5;
+  flex: 5;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -76,23 +99,6 @@ exports[`<Question3 /> should match snapshot 1`] = `
 }
 
 .c10 {
-  background-color: #f5c632;
-  height: 70%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: start;
-  -webkit-box-align: start;
-  -ms-flex-align: start;
-  align-items: start;
-}
-
-.c11 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -104,9 +110,11 @@ exports[`<Question3 /> should match snapshot 1`] = `
   text-align: center;
 }
 
-.c8 {
+.c7 {
   background-color: #9FC363;
-  height: 60%;
+  -webkit-flex: 3;
+  -ms-flex: 3;
+  flex: 3;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -121,9 +129,30 @@ exports[`<Question3 /> should match snapshot 1`] = `
   align-items: start;
 }
 
-.c13 {
+.c12 {
   background-color: #898989;
-  height: 30%;
+  -webkit-flex: 2;
+  -ms-flex: 2;
+  flex: 2;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: start;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: start;
+}
+
+.c14 {
+  background-color: #2BB673;
+  -webkit-flex: 3;
+  -ms-flex: 3;
+  flex: 3;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -139,31 +168,10 @@ exports[`<Question3 /> should match snapshot 1`] = `
 }
 
 .c15 {
-  background-color: #2BB673;
-  width: 80%;
-  height: 12rem;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: start;
-  -webkit-box-align: start;
-  -ms-flex-align: start;
-  align-items: start;
-}
-
-.c16 {
   background-color: #F1CCDE;
-  width: 20%;
-  height: 12rem;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
@@ -176,9 +184,11 @@ exports[`<Question3 /> should match snapshot 1`] = `
   overflow: hidden;
 }
 
-.c17 {
+.c16 {
   background-color: #FFA500;
-  height: 8rem;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -193,11 +203,28 @@ exports[`<Question3 /> should match snapshot 1`] = `
   align-items: center;
 }
 
-.c0 {
-  width: 100%;
-  max-width: 80rem;
-  margin-left: auto;
-  margin-right: auto;
+.c4 {
+  -webkit-flex: 5;
+  -ms-flex: 5;
+  flex: 5;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1.0rem;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c13 {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1.0rem;
 }
 
 .c5 {
@@ -205,39 +232,23 @@ exports[`<Question3 /> should match snapshot 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  gap: 1.0rem;
-  height: 100%;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-}
-
-.c14 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 1.0rem;
-}
-
-.c6 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  width: 40%;
-  height: 100%;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
   gap: 1.0rem;
 }
 
-.c9 {
+.c8 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  width: 60%;
+  -webkit-flex: 2;
+  -ms-flex: 2;
+  flex: 2;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
@@ -246,158 +257,145 @@ exports[`<Question3 /> should match snapshot 1`] = `
 
 <div
   className="c0"
-  data-testid="question3"
+  data-testid="base-layout"
 >
-  <div
+  <header
     className="c1"
-    data-testid="base-layout"
+    data-testid="header"
+  >
+    <h1
+      className="c2"
+      color="white"
+      data-testid="typography"
+      size="xxlarge"
+    >
+      Header
+    </h1>
+  </header>
+  <main
+    className="c3"
   >
     <div
-      className="c0"
-    >
-      <header
-        className="c2"
-        data-testid="header"
-      >
-        <h1
-          className="c3"
-          color="white"
-          data-testid="typography"
-          size="xxlarge"
-        >
-          Header
-        </h1>
-      </header>
-    </div>
-    <main
       className="c4"
     >
       <div
         className="c5"
       >
-        <div
+        <section
           className="c6"
+          data-testid="hero"
         >
-          <section
-            className="c7"
-            data-testid="hero"
+          <h1
+            className="c2"
+            color="white"
+            data-testid="typography"
+            size="xxlarge"
           >
-            <h1
-              className="c3"
-              color="white"
-              data-testid="typography"
-              size="xxlarge"
-            >
-              Hero
-            </h1>
-          </section>
-          <aside
-            className="c8"
-            data-testid="sidebar"
-          >
-            <h1
-              className="c3"
-              color="white"
-              data-testid="typography"
-              size="xxlarge"
-            >
-              Sidebar
-            </h1>
-          </aside>
-        </div>
-        <div
-          className="c9"
+            Hero
+          </h1>
+        </section>
+        <aside
+          className="c7"
+          data-testid="sidebar"
         >
-          <section
-            className="c10"
-            data-testid="main-content"
+          <h1
+            className="c2"
+            color="white"
+            data-testid="typography"
+            size="xxlarge"
           >
-            <div
-              className="c11"
-            >
-              <h1
-                className="c3"
-                color="white"
-                data-testid="typography"
-                size="xxlarge"
-              >
-                Main Content
-              </h1>
-              <span
-                className="c12"
-                color="white"
-                data-testid="typography"
-                size="medium"
-              >
-                ** If thing do not look right, make sure your browser 
-                <br />
-                 is in "Experimental Mode".
-              </span>
-            </div>
-          </section>
-          <section
-            className="c13"
-            data-testid="extra-content"
-          >
-            <h1
-              className="c3"
-              color="white"
-              data-testid="typography"
-              size="xxlarge"
-            >
-              Extra Content
-            </h1>
-          </section>
-        </div>
+            Sidebar
+          </h1>
+        </aside>
       </div>
       <div
-        className="c14"
+        className="c8"
       >
-        <div
-          className="c15"
-          data-testid="related-images"
+        <section
+          className="c9"
+          data-testid="main-content"
+        >
+          <div
+            className="c10"
+          >
+            <h1
+              className="c2"
+              color="white"
+              data-testid="typography"
+              size="xxlarge"
+            >
+              Main Content
+            </h1>
+            <span
+              className="c11"
+              color="white"
+              data-testid="typography"
+              size="medium"
+            >
+              ** If thing do not look right, make sure your browser 
+              <br />
+               is in "Experimental Mode".
+            </span>
+          </div>
+        </section>
+        <section
+          className="c12"
+          data-testid="extra-content"
         >
           <h1
-            className="c3"
+            className="c2"
             color="white"
             data-testid="typography"
             size="xxlarge"
           >
-            Related images
+            Extra Content
           </h1>
-        </div>
-        <div
-          className="c16"
-          data-testid="related-posts"
-        >
-          <h1
-            className="c3"
-            color="white"
-            data-testid="typography"
-            size="xxlarge"
-          >
-            Related posts
-          </h1>
-        </div>
+        </section>
       </div>
-    </main>
+    </div>
     <div
-      className="c0"
+      className="c13"
     >
-      <footer
-        className="c17"
-        data-testid="footer"
+      <div
+        className="c14"
+        data-testid="related-images"
       >
         <h1
-          className="c3"
+          className="c2"
           color="white"
           data-testid="typography"
           size="xxlarge"
         >
-          Footer
+          Related images
         </h1>
-      </footer>
+      </div>
+      <div
+        className="c15"
+        data-testid="related-posts"
+      >
+        <h1
+          className="c2"
+          color="white"
+          data-testid="typography"
+          size="xxlarge"
+        >
+          Related posts
+        </h1>
+      </div>
     </div>
-  </div>
+  </main>
+  <footer
+    className="c16"
+    data-testid="footer"
+  >
+    <h1
+      className="c2"
+      color="white"
+      data-testid="typography"
+      size="xxlarge"
+    >
+      Footer
+    </h1>
+  </footer>
 </div>
 `;

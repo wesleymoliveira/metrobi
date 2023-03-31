@@ -8,7 +8,9 @@ exports[`<ExtraContent /> should match snapshot 1`] = `
 
 .c0 {
   background-color: #898989;
-  height: 30%;
+  -webkit-flex: 2;
+  -ms-flex: 2;
+  flex: 2;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;

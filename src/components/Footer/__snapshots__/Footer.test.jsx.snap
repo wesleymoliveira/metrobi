@@ -3,7 +3,9 @@
 exports[`<Footer /> should match snapshot 1`] = `
 .c0 {
   background-color: #FFA500;
-  height: 8rem;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;

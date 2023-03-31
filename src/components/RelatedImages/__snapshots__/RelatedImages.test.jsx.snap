@@ -8,8 +8,9 @@ exports[`<RelatedImages /> should match snapshot 1`] = `
 
 .c0 {
   background-color: #2BB673;
-  width: 80%;
-  height: 12rem;
+  -webkit-flex: 3;
+  -ms-flex: 3;
+  flex: 3;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;

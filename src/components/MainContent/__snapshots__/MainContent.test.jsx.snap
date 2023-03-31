@@ -13,7 +13,9 @@ exports[`<MainContent /> should match snapshot 1`] = `
 
 .c0 {
   background-color: #f5c632;
-  height: 70%;
+  -webkit-flex: 5;
+  -ms-flex: 5;
+  flex: 5;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;

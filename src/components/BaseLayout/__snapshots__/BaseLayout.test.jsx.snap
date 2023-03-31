@@ -1,50 +1,47 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<BaseLayout /> should match snapshot 1`] = `
-.c3 {
+.c2 {
   color: #FAFAFA;
   font-size: 2.8rem;
 }
 
-.c2 {
-  background-color: #54d5eb;
-  height: 8rem;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c5 {
-  background-color: #FFA500;
-  height: 8rem;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
 .c1 {
-  width: 100%;
-  max-width: 80rem;
-  margin-left: auto;
-  margin-right: auto;
+  background-color: #54d5eb;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c4 {
+  background-color: #FFA500;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .c0 {
@@ -55,18 +52,18 @@ exports[`<BaseLayout /> should match snapshot 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  height: 100vh;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  height: 100vh;
   gap: 1.0rem;
 }
 
-.c4 {
-  -webkit-flex: 1 0 auto;
-  -ms-flex: 1 0 auto;
-  flex: 1 0 auto;
+.c3 {
+  -webkit-flex: 8;
+  -ms-flex: 8;
+  flex: 8;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -81,42 +78,34 @@ exports[`<BaseLayout /> should match snapshot 1`] = `
   className="c0"
   data-testid="base-layout"
 >
-  <div
+  <header
     className="c1"
+    data-testid="header"
   >
-    <header
+    <h1
       className="c2"
-      data-testid="header"
+      color="white"
+      data-testid="typography"
+      size="xxlarge"
     >
-      <h1
-        className="c3"
-        color="white"
-        data-testid="typography"
-        size="xxlarge"
-      >
-        Header
-      </h1>
-    </header>
-  </div>
+      Header
+    </h1>
+  </header>
   <main
-    className="c4"
+    className="c3"
   />
-  <div
-    className="c1"
+  <footer
+    className="c4"
+    data-testid="footer"
   >
-    <footer
-      className="c5"
-      data-testid="footer"
+    <h1
+      className="c2"
+      color="white"
+      data-testid="typography"
+      size="xxlarge"
     >
-      <h1
-        className="c3"
-        color="white"
-        data-testid="typography"
-        size="xxlarge"
-      >
-        Footer
-      </h1>
-    </footer>
-  </div>
+      Footer
+    </h1>
+  </footer>
 </div>
 `;

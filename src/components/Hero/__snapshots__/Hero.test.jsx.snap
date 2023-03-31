@@ -8,7 +8,9 @@ exports[`<Hero /> should match snapshot 1`] = `
 
 .c0 {
   background-color: #d7c9e3;
-  height: 40%;
+  -webkit-flex: 2;
+  -ms-flex: 2;
+  flex: 2;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;

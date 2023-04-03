@@ -58,4 +58,23 @@ describe('<Question7 />', () => {
     const capacity = 6;
     expect(getMaxLoad(duplicateCarrots, capacity)).toBe(30);
   });
+
+	const wrongCarrotTypeInputError = 'carrotTypes should be an array of objects with a "kg" and a "price" property';
+
+	const wrongCapacityInputError = 'capacity should be a non-negative integer';
+
+	 it('should throw an error if carrotTypes is not an array of objects with "kg" and "price" properties', () => {
+    expect(() => getMaxLoad(null, 10)).toThrow(wrongCarrotTypeInputError);
+    expect(() => getMaxLoad([{}], 10)).toThrow(wrongCarrotTypeInputError);
+    expect(() => getMaxLoad([{ kg: 1 }], 10)).toThrow(wrongCarrotTypeInputError);
+    expect(() => getMaxLoad([{ price: 1 }], 10)).toThrow(wrongCarrotTypeInputError);
+    expect(() => getMaxLoad([{ kg: 1, price: 2 }, { kg: 2 }, { price: 3 }], 10)).toThrow(wrongCarrotTypeInputError);
+  });
+
+  it('should throw an error if capacity is not a non-negative integer', () => {
+    expect(() => getMaxLoad([{ kg: 1, price: 2 }], null)).toThrow(wrongCapacityInputError);
+    expect(() => getMaxLoad([{ kg: 1, price: 2 }], '10')).toThrow(wrongCapacityInputError);
+    expect(() => getMaxLoad([{ kg: 1, price: 2 }], -1)).toThrow(wrongCapacityInputError);
+    expect(() => getMaxLoad([{ kg: 1, price: 2 }], 1.5)).toThrow(wrongCapacityInputError);
+  });
 });

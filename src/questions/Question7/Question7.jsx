@@ -1,26 +1,25 @@
 export function getMaxLoad(carrotTypes, capacity) {
-	const knownLoadValues = {};
-	const carrotWeights = carrotTypes.map((carrot) => Number(carrot['kg']));
-	const minWeight = Math.min(...carrotWeights);
 
-	if (minWeight > capacity) {
-		return 0;
-	} 		
+	if (!Array.isArray(carrotTypes) || !carrotTypes.every(c => typeof c === 'object' && 'kg' in c && 'price' in c)) {
+    throw new Error('carrotTypes should be an array of objects with a "kg" and a "price" property');
+  }
 
-	for (let weight = 0; weight <= capacity; weight++) {
-  	knownLoadValues[weight] = 0;
-	}
-	
-	 for (let weight = 0; weight <= capacity; weight++) {
-		for (let carrot of carrotTypes) {
-			const carrotWeight = Number(carrot['kg']);
-			const carrotPrice = Number(carrot['price']);
+  if (typeof capacity !== 'number' || capacity < 0 || !Number.isInteger(capacity)) {
+    throw new Error('capacity should be a non-negative integer');
+  }
 
-			if (carrotWeight <= weight && knownLoadValues[weight - carrotWeight] + carrotPrice > knownLoadValues[weight]) {
-  			knownLoadValues[weight] = knownLoadValues[weight - carrotWeight] + carrotPrice;
-			}
-		}
-	} 
-	return knownLoadValues[capacity];
+	const knownLoadValues = new Array(capacity + 1).fill(0);
+
+  for (const carrot of carrotTypes) {
+    const { kg: carrotWeight, price: carrotPrice } = carrot;
+
+    for (let weight = carrotWeight; weight <= capacity; weight++) {
+      const potentialLoad = knownLoadValues[weight - carrotWeight] + carrotPrice;
+      if (potentialLoad > knownLoadValues[weight]) {
+        knownLoadValues[weight] = potentialLoad;
+      }
+    }
+  }
+
+  return knownLoadValues[capacity];
 }
-	

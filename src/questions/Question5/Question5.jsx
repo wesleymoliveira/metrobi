@@ -2,29 +2,35 @@ export const eggDrop = () => {
 		const alreadyCalculated = {};
 
 		const dropEggs = (numberOfEggs, numberOfFloors) => {
-			if (numberOfEggs === 1 || numberOfFloors === 1 || numberOfFloors === 0) {
-				return numberOfFloors;
-			}
+    if (numberOfEggs === 1 || numberOfFloors === 1 || numberOfFloors === 0) {
+      return numberOfFloors;
+    }
 
-			if (`${numberOfEggs}-${numberOfFloors}` in alreadyCalculated) {
-				return alreadyCalculated[`${numberOfEggs}-${numberOfFloors}`];
-			}
+    if (`${numberOfEggs}-${numberOfFloors}` in alreadyCalculated) {
+      return alreadyCalculated[`${numberOfEggs}-${numberOfFloors}`];
+    }
 
-			let minimum = numberOfFloors + 1;
-			for (let floor = 1; floor < numberOfFloors; floor++) {
-				//max because we want to find the worst case scenario
-				const result = Math.max(
-					dropEggs(numberOfEggs - 1, floor - 1),
-					dropEggs(numberOfEggs, numberOfFloors - floor)
-				);
-				if (result < minimum) {
-					minimum = result;
-				}
-			}
+    let minimumAttempts = numberOfFloors + 1;
+    let start = 1;
+    let end = numberOfFloors;
 
-			alreadyCalculated[`${numberOfEggs}-${numberOfFloors}`] = minimum + 1;
-			return minimum + 1;
-		};
+    while (start <= end) {
+      const middleFloor = Math.floor((start + end) / 2);
+      const eggsBrokenFromBelow = dropEggs(numberOfEggs - 1, middleFloor - 1);
+      const eggsBrokenFromAbove = dropEggs(numberOfEggs, numberOfFloors - middleFloor);
+
+      if (eggsBrokenFromBelow < eggsBrokenFromAbove) {
+        start = middleFloor + 1;
+        minimumAttempts = Math.min(minimumAttempts, eggsBrokenFromAbove + 1);
+      } else {
+        end = middleFloor - 1;
+        minimumAttempts = Math.min(minimumAttempts, eggsBrokenFromBelow + 1);
+      }
+    }
+
+    alreadyCalculated[`${numberOfEggs}-${numberOfFloors}`] = minimumAttempts;
+    return minimumAttempts;
+  };
 
 		const testEggDrop = (eggs, floors) => {
 			const result = dropEggs(eggs, floors);

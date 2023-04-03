@@ -1,27 +1,27 @@
-export function isStringBracketsProperlyOpenedAndClosed(string) {
-	const stringLength = string.length;
-	const allowedCharPairsSet = {'{': '}', '(': ')', '[': ']'};
-	const unpairedClosingChars = [];
+export function isStringBracketsProperlyOpenedAndClosed(inputString) {
+	const inputLength = inputString.length;
+	const allowedBracketsPairsSet = {'{': '}', '(': ')', '[': ']'};
+	const unpairedClosingBrackets = [];
 	
-	if (stringLength % 2 !== 0 || stringLength === 0) {
+	if (inputLength % 2 !== 0 || inputLength === 0) {
 		return false;
 	}
 
-	for (const char of string) {
+	for (const bracket of inputString) {
 		// is it a opening char?
-		if (char in allowedCharPairsSet) {
+		if (bracket in allowedBracketsPairsSet) {
 
 			//then add the expected closing char to the unpairedClosingChars array
-      unpairedClosingChars.push(allowedCharPairsSet[char]);
+      unpairedClosingBrackets.push(allowedBracketsPairsSet[bracket]);
     } else {
-      const expectedChar = unpairedClosingChars.pop();
+      const expectedClosingChar = unpairedClosingBrackets.pop();
 
 			//the current char is expected to be a closing char that matches the last opening char
-      if (expectedChar !== char) {
+      if (expectedClosingChar !== bracket) {
         return false;
       }
     }
 	}
-  return !unpairedClosingChars.length;
+  return !unpairedClosingBrackets.length;
 }
 
